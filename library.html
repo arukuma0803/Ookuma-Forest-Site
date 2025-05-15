@@ -5,6 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>和奏资料馆</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .audio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .audio-card {
+      background-color: #ffffff;
+      border: 1px solid #dcdcdc;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .audio-card p {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #446176;
+    }
+
+    .audio-card audio {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -58,51 +85,54 @@
         <li>《Stellar Blade》 —— 饰演 母球体（Mother Sphere）</li>
       </ul>
     </section>
+
     <section>
-  <h2>🎙️ 声音样本试听</h2>
-  <div class="audio-grid">
-    <div class="audio-card">
-      <p>🗣️ セリフ1</p>
-      <audio controls src="audio/serif1.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>🗣️ セリフ2</p>
-      <audio controls src="audio/serif2.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>🗣️ セリフ3</p>
-      <audio controls src="audio/serif3.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>🗣️ セリフ4</p>
-      <audio controls src="audio/serif4.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>🗣️ セリフ5</p>
-      <audio controls src="audio/serif5.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>🗣️ セリフ6</p>
-      <audio controls src="audio/serif6.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>🗣️ セリフ7</p>
-      <audio controls src="audio/serif7.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>🗣️ セリフ8</p>
-      <audio controls src="audio/serif8.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>🎧 ナレーション</p>
-      <audio controls src="audio/narration.mp3"></audio>
-    </div>
-    <div class="audio-card">
-      <p>💬 フリートーク</p>
-      <audio controls src="audio/freetalk.mp3"></audio>
-    </div>
-  </div>
+      <h2>🎙️ 声音样本试听</h2>
+      <p>以下为事务所官网公开的声音样本：</p>
+      <div class="audio-grid">
+        <div class="audio-card">
+          <p>🗣️ セリフ1</p>
+          <audio controls src="audio/serif1.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>🗣️ セリフ2</p>
+          <audio controls src="audio/serif2.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>🗣️ セリフ3</p>
+          <audio controls src="audio/serif3.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>🗣️ セリフ4</p>
+          <audio controls src="audio/serif4.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>🗣️ セリフ5</p>
+          <audio controls src="audio/serif5.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>🗣️ セリフ6</p>
+          <audio controls src="audio/serif6.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>🗣️ セリフ7</p>
+          <audio controls src="audio/serif7.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>🗣️ セリフ8</p>
+          <audio controls src="audio/serif8.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>🎧 ナレーション</p>
+          <audio controls src="audio/narration.mp3"></audio>
+        </div>
+        <div class="audio-card">
+          <p>💬 フリートーク</p>
+          <audio controls src="audio/freetalk.mp3"></audio>
+        </div>
+      </div>
     </section>
+
     <section>
       <h2>事务所官网资料</h2>
       <p>查看官方信息请访问她在 <a href="https://kenproduction.co.jp/talent/247" target="_blank">贤Production官网页面</a>。</p>
