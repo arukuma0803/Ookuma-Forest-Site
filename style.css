@@ -71,3 +71,43 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+.navbar {
+  background-color: #e8ecf1;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #d0d6dd;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* 自动换行 */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #446176;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  transition: background-color 0.2s, color 0.2s;
+  white-space: nowrap; /* 防止文字被拆行 */
+}
+
+.navbar li a:hover {
+  background-color: #d8dee4;
+  color: #2c485c;
+}
+
+/* 移动端优化 */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
