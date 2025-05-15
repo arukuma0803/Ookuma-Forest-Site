@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>粉丝作品展厅 - 大熊森林护林站</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #b9a5d2;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #8cc7a1;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .work-item {
+      display: flex;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      gap: 1rem;
+    }
+    .work-item img {
+      max-width: 150px;
+      border-radius: 8px;
+    }
+    .work-item .content {
+      flex: 1;
+    }
+    .work-item .content h3 {
+      margin: 0;
+      color: #8cc7a1;
+      font-size: 1.2rem;
+    }
+    .work-item .content p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .back {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>粉丝作品展厅</h1>
+  </header>
+  <main>
+    <section>
+      <h2>图文作品</h2>
+      <div class="work-item">
+        <img src="example1.jpg" alt="作品1">
+        <div class="content">
+          <h3>作品名称 1</h3>
+          <p>这是一段描述文字，介绍这件作品的创作背景、灵感来源等。</p>
+        </div>
+      </div>
+      <div class="work-item">
+        <img src="example2.jpg" alt="作品2">
+        <div class="content">
+          <h3>作品名称 2</h3>
+          <p>这是一段描述文字，介绍这件作品的创作背景、灵感来源等。</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>视频作品</h2>
+      <div class="work-item">
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/example_video" frameborder="0" allowfullscreen></iframe>
+        <div class="content">
+          <h3>视频名称 1</h3>
+          <p>这是一段描述文字，介绍这段视频的创作背景、灵感来源等。</p>
+        </div>
+      </div>
+    </section>
+    <div class="back">
+      <a href="index.html">← 返回首页</a>
+    </div>
+  </main>
+</body>
+</html>

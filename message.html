@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>留言&寄语板</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #b9a5d2;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .message-board {
+      margin-bottom: 2rem;
+    }
+    .message {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .message h4 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .message p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
+    .message-time {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 1rem;
+      text-align: right;
+    }
+    .message-form {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .message-form label {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .message-form input,
+    .message-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .message-form button {
+      background-color: #8cc7a1;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .message-form button:hover {
+      background-color: #78b08d;
+    }
+    .back-to-top {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .back-to-top a {
+      color: #8cc7a1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>留言&寄语板</h1>
+    <p>欢迎您在此留下您的心情与寄语！</p>
+  </header>
+  <main>
+    <!-- 留言展示区 -->
+    <section class="message-board">
+      <h2>粉丝留言：</h2>
+      <div class="message">
+        <h4>小鲑鱼</h4>
+        <p>和奏的歌声真是太治愈了！期待更多作品。</p>
+        <div class="message-time">2025年5月14日 09:30</div>
+      </div>
+      <div class="message">
+        <h4>大熊和奏粉</h4>
+        <p>每次听到《空っぽだから》都觉得有种力量，感动满满。</p>
+        <div class="message-time">2025年5月13日 15:20</div>
+      </div>
+      <!-- 其他留言会在这里展示 -->
+    </section>
+
+    <!-- 留言提交区 -->
+    <section class="message-form">
+      <h2>留下您的寄语：</h2>
+      <form action="#" method="post">
+        <label for="nickname">昵称：</label>
+        <input type="text" id="nickname" name="nickname" required />
+
+        <label for="message">留言内容：</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">提交留言</button>
+      </form>
+    </section>
+
+    <div class="back-to-top">
+      <a href="#top">返回顶部</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 大熊森林护林站 | 本站为粉丝自建，非官方站点</p>
+  </footer>
+</body>
+</html>

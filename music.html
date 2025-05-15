@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>和奏资料馆与音乐作品 - 大熊森林护林站</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #b9a5d2;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #8cc7a1;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .music-item {
+      display: flex;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      gap: 1rem;
+    }
+    .music-item img {
+      max-width: 150px;
+      border-radius: 8px;
+    }
+    .music-item .content {
+      flex: 1;
+    }
+    .music-item .content h3 {
+      margin: 0;
+      color: #8cc7a1;
+      font-size: 1.2rem;
+    }
+    .music-item .content p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .back {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>和奏资料馆与音乐作品</h1>
+  </header>
+  <main>
+    <section>
+      <h2>和奏资料馆</h2>
+      <p>
+        欢迎来到和奏资料馆！这里汇聚了所有与和奏相关的信息、音乐作品、节目以及粉丝创作。希望你在这里找到你所需要的一切。
+      </p>
+      <p>这里将展示和奏的专辑、歌曲以及更多资料内容。</p>
+    </section>
+
+    <section>
+      <h2>专辑与单曲</h2>
+      <div class="music-item">
+        <img src="album_cover1.jpg" alt="专辑封面 1">
+        <div class="content">
+          <h3>专辑名称 1</h3>
+          <p>这是一段描述文字，介绍专辑的创作背景、特色等。</p>
+        </div>
+      </div>
+      <div class="music-item">
+        <img src="album_cover2.jpg" alt="专辑封面 2">
+        <div class="content">
+          <h3>专辑名称 2</h3>
+          <p>这是一段描述文字，介绍专辑的创作背景、特色等。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>歌曲与音频</h2>
+      <div class="music-item">
+        <audio controls>
+          <source src="audio1.mp3" type="audio/mp3">
+          您的浏览器不支持音频元素。
+        </audio>
+        <div class="content">
+          <h3>歌曲名称 1</h3>
+          <p>这是一段描述文字，介绍这首歌的创作背景、歌词等。</p>
+        </div>
+      </div>
+      <div class="music-item">
+        <audio controls>
+          <source src="audio2.mp3" type="audio/mp3">
+          您的浏览器不支持音频元素。
+        </audio>
+        <div class="content">
+          <h3>歌曲名称 2</h3>
+          <p>这是一段描述文字，介绍这首歌的创作背景、歌词等。</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="back">
+      <a href="index.html">← 返回首页</a>
+    </div>
+  </main>
+</body>
+</html>
